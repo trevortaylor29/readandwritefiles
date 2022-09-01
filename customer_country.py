@@ -7,12 +7,14 @@ def main():
     csvfile = csv.reader(infile, delimiter=',')
     
 
-    num = 0
+    rowcount = 0
 
     for record in csvfile:
         outfile.write(record[1] + ' ' + record[2] + ',' + ' ' + record[4])
-        outfile.write('\n')
         
+        outfile.write('\n')
+    
+            
         
 
     outfile.close()
