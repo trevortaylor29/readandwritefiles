@@ -8,12 +8,13 @@ def main():
     
 
     
-
+    index = 0
     for record in csvfile:
         outfile.write(record[1] + ' ' + record[2] + ',' + ' ' + record[4])
-        
+        index += 1
         outfile.write('\n')
     
+    outfile.write('Customers read: ' + str(index))
             
         
 
